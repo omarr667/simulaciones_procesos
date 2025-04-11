@@ -102,8 +102,18 @@ with st.sidebar:
 
 
 
-    st.write("<img ")
-
+    # Espaciado para colocar la imagen al final
+    for _ in range(10):
+        st.write("")
+    
+    
+    # Imagen con enlace a la URL de LinkedIn
+    st.write(
+        "<a href='https://www.linkedin.com/in/omarr667/' target='_blank'>"
+        "<img src='https://github.com/omarr667/simulaciones_procesos/blob/main/assets/linkedin.png?raw=true' width='100%'>"
+        "</a>",
+        unsafe_allow_html=True
+    )
 
 st.title("Caminata Aleatoria de Bernoulli")
 st.write("Una caminata aleatoria de Bernoulli es una secuencia de pasos aleatorios en la que cada paso tiene una probabilidad de éxito (p) y una probabilidad de fracaso (q=1-p).\
